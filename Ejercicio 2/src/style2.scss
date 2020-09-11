@@ -1,0 +1,71 @@
+%box-style {
+    width: 15rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: system-ui;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2.5rem;
+}
+
+%texto-font{
+    /*font-family: monospace;*/
+    border: blue 5px outset;
+    width: 15rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2.2rem;
+}
+
+.principal-font{
+    @extend %texto-font;
+    font-family: monospace;
+}
+
+.secondary-font{
+    @extend %texto-font;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+.box{
+    @extend %box-style;
+}
+
+.base {
+    background-color: blue;
+}
+
+.important{
+    background-color: darkblue;
+}
+
+.warning{
+    background-color: aquamarine;
+}
+
+.box-shadow {
+    box-shadow: 12px 13px 21px #0000008f;
+    color: black;
+    border: #000 1px outset;
+}
+
+button.boton {
+    font-family: monospace;
+    width: 20rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.2rem;
+    background-color: #0fdec2;
+    display: none;
+}
+
+button.boton:hover {
+    background-color: #20c3ad59;
+}
+
+main.container {
+    text-align: -webkit-center;
+}

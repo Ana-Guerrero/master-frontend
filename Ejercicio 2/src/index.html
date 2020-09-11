@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejercicio 2. Módulo Layout</title>
+    <meta name="description" content="Crear dos temas distintos y mostrar los resultados en una página">
+    <link rel="stylesheet" href="./style2.scss" type="text/css" />
+    <link rel="stylesheet" href="./style.scss" type="text/css" id="estilos" />
+  </head>
+  <body>
+    <main class="container">
+        <div class="box base">Base</div>
+        <div class="box important">Important</div>
+        <div class="box warning">Warning</div>
+        <p class="texto principal-font">Principal Font</p>
+        <p class="texto secondary-font">Secondary Font</p>
+        <div class="box box-shadow">Box Shadow</div>
+        <button class="boton" onclick="cambiar()">Cambiar Tema</button>
+    </main>
+  </body>
+
+ <!-- Función que permite cambiar la hoja de estilos pulsando el button--> 
+  <script>
+    function cambiar(){
+      document.getElementById('estilos').href = './style2.scss';
+    }
+  </script>
+</html>
