@@ -1,0 +1,46 @@
+nav {
+  padding: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p.title {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #0e5560;
+}
+
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 1.5em 1em;
+  text-align: center;
+}
+
+nav li a:hover {
+  background: #07343c;
+  color: white;
+}
+
+/* @media-query */
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    /*la caja puede crecer para ocupar todo el espacio disponible */
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
